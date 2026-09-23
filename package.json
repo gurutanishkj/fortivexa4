@@ -1,0 +1,31 @@
+{
+  "name": "fortivexa-cybercrime-intelligence",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "FORTIVEXA - Predictive Analytics Framework for Cybercrime Complaints (TRL 3 Proof of Concept)",
+  "scripts": {
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"node server/server.js\" \"vite --host\"",
+    "dev:client": "vite",
+    "dev:server": "node server/server.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.1.0"
+  }
+}
