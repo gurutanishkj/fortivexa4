@@ -1,0 +1,101 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-06-01T00:00:00Z",
+    "reference_id": "GENESIS-ROOT",
+    "operation": "AUDIT_GENESIS_ROOT",
+    "payload": "{\"description\": \"FORTIVEXA TRL 5 Cryptographic Evidence Anchor\", \"standard\": \"SHA-256 Tamper-Evident Merkle Pointer Chain\", \"timestamp\": \"2026-06-01T00:00:00Z\", \"type\": \"GENESIS_AUDIT_ROOT\"}",
+    "payload_hash": "780afee53bb803173b4b9dcbbf5b60844f74733d6b78b8374b37263638f7e68e",
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "block_hash": "b9dc308d7ba82133a411f4c371c88cdd978d6ec143dcee6c3ff5311c4e0dfdec",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-06-01T11:00:00Z",
+    "reference_id": "CMP-1001",
+    "operation": "COMPLAINT_INGESTION_SEAL",
+    "payload": "{\"desc\": \"UPI Phishing reported \\u20b995,000 via Axis mule\", \"op\": \"COMPLAINT_INGESTION_SEAL\", \"ref\": \"CMP-1001\"}",
+    "payload_hash": "16f097ed67c3008a3c5853bb7ab720e2c67e8500ef4f37739fd1c4a20a6e4f69",
+    "previous_hash": "b9dc308d7ba82133a411f4c371c88cdd978d6ec143dcee6c3ff5311c4e0dfdec",
+    "block_hash": "99f5303a38cbf5530bbd5d1d0cc5f9e5d200d76576c92c650597fbf9f6fc59f7",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-06-01T13:00:00Z",
+    "reference_id": "RING-01",
+    "operation": "MULE_RING_CORRELATION",
+    "payload": "{\"desc\": \"Apex Syndicate correlated across 4 complaints\", \"op\": \"MULE_RING_CORRELATION\", \"ref\": \"RING-01\"}",
+    "payload_hash": "56a108b3f467213ab2edf06d6911514b41ff2d17bb9f010c003f16fd841fe1c5",
+    "previous_hash": "99f5303a38cbf5530bbd5d1d0cc5f9e5d200d76576c92c650597fbf9f6fc59f7",
+    "block_hash": "6d417785591bf98de340b8a827c39952d6bd6328e7be92411ae6eaf05204f17a",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-06-01T15:00:00Z",
+    "reference_id": "PRED-CMP-1001",
+    "operation": "LOCATION_PREDICTION_DISPATCH",
+    "payload": "{\"desc\": \"Forecasted LOC-001 (Sector 4 Central ATM)\", \"op\": \"LOCATION_PREDICTION_DISPATCH\", \"ref\": \"PRED-CMP-1001\"}",
+    "payload_hash": "6eac36dcd0190ae4f007c6ca83dccd86f4d57bdc638a8eedd3f0ac195c2ddacb",
+    "previous_hash": "6d417785591bf98de340b8a827c39952d6bd6328e7be92411ae6eaf05204f17a",
+    "block_hash": "f7e04eb7122ea0c59fb49477c15806f23d634cf76dc0db6f9c36e224d2199d66",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-06-01T17:00:00Z",
+    "reference_id": "CMP-1002",
+    "operation": "COMPLAINT_INGESTION_SEAL",
+    "payload": "{\"desc\": \"Telegram Task scam reported \\u20b91,42,000\", \"op\": \"COMPLAINT_INGESTION_SEAL\", \"ref\": \"CMP-1002\"}",
+    "payload_hash": "6d294404ce3af56c6d67f177d95bfbcfc0e23bc3785e0ad995f7235dfda7a032",
+    "previous_hash": "f7e04eb7122ea0c59fb49477c15806f23d634cf76dc0db6f9c36e224d2199d66",
+    "block_hash": "16b7a34b812fa9b8006b6cb8f8cf459600c6718521885bc44162a13c44bc37d4",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-06-01T19:00:00Z",
+    "reference_id": "RING-02",
+    "operation": "MULE_RING_CORRELATION",
+    "payload": "{\"desc\": \"East Coast Job-Scam Hub correlated\", \"op\": \"MULE_RING_CORRELATION\", \"ref\": \"RING-02\"}",
+    "payload_hash": "fe4b9890abfd9bea98feca7f6e8dca7c4cb35bba6f6dce90a7a801addc4a53fd",
+    "previous_hash": "16b7a34b812fa9b8006b6cb8f8cf459600c6718521885bc44162a13c44bc37d4",
+    "block_hash": "66219514453b10d2039fdcbceed7f1f0d7f42d6aa103f320fa1ba025d339ba17",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 6,
+    "timestamp": "2026-06-01T21:00:00Z",
+    "reference_id": "PRED-CMP-1002",
+    "operation": "LOCATION_PREDICTION_DISPATCH",
+    "payload": "{\"desc\": \"Forecasted LOC-003 (Outer Ring Road ATM)\", \"op\": \"LOCATION_PREDICTION_DISPATCH\", \"ref\": \"PRED-CMP-1002\"}",
+    "payload_hash": "f791fc19dce3a100158ecf23e5df1d618e006cca31d48d12a7b637e513aadd1f",
+    "previous_hash": "66219514453b10d2039fdcbceed7f1f0d7f42d6aa103f320fa1ba025d339ba17",
+    "block_hash": "30a0799f85dfb82368700bbdc7d17f4fa480eb9d09fd27ed17c1e47e6da91094",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 7,
+    "timestamp": "2026-06-01T23:00:00Z",
+    "reference_id": "DISPATCH-CMP-1001",
+    "operation": "QRT_PATROL_DISPATCH",
+    "payload": "{\"desc\": \"QRT Unit Alpha dispatched to LOC-001\", \"op\": \"QRT_PATROL_DISPATCH\", \"ref\": \"DISPATCH-CMP-1001\"}",
+    "payload_hash": "9b7310c1513744e6961159c7eb5742c3a1f9b44655b2fe0fe65a62c93a1e9004",
+    "previous_hash": "30a0799f85dfb82368700bbdc7d17f4fa480eb9d09fd27ed17c1e47e6da91094",
+    "block_hash": "db91183891df31f309654c5cde60dc5c192469658f7c28030ffab2cd119fcd37",
+    "status": "VERIFIED_VALID"
+  },
+  {
+    "index": 8,
+    "timestamp": "2026-06-02T01:00:00Z",
+    "reference_id": "EVIDENCE-CMP-1001",
+    "operation": "CASH_WITHDRAWAL_INTERCEPTED",
+    "payload": "{\"desc\": \"Physical cashout intercepted, \\u20b995,000 preserved\", \"op\": \"CASH_WITHDRAWAL_INTERCEPTED\", \"ref\": \"EVIDENCE-CMP-1001\"}",
+    "payload_hash": "4e740c836f4930f978de2bf95d38b318d8bec574bddf2cee4fa5bd2dfc2bca91",
+    "previous_hash": "db91183891df31f309654c5cde60dc5c192469658f7c28030ffab2cd119fcd37",
+    "block_hash": "9bd9728ec61480e6ee1f9adebda3802dade184536a5ccb28ea5e30469c5498e9",
+    "status": "VERIFIED_VALID"
+  }
+]

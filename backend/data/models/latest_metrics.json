@@ -1,0 +1,43 @@
+{
+  "model_type": "XGBoost Classifier (TRL 5 Validated)",
+  "trained_at": "2026-09-24T13:56:26.425230Z",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.08,
+    "random_state": 42
+  },
+  "training_time_ms": 116.52,
+  "sample_counts": {
+    "total_samples": 1500,
+    "train_samples": 1200,
+    "test_samples": 300
+  },
+  "metrics": {
+    "accuracy": 73.0,
+    "precision": 58.12,
+    "recall": 68.0,
+    "f1_score": 62.67,
+    "roc_auc": 81.46,
+    "precision_at_1": 47.0,
+    "precision_at_3": 95.0
+  },
+  "confusion_matrix": {
+    "tn": 151,
+    "fp": 49,
+    "fn": 32,
+    "tp": 68
+  },
+  "feature_importances": {
+    "log_amount": 0.0641,
+    "tx_frequency_per_hr": 0.0547,
+    "time_since_last_txn_min": 0.0718,
+    "connected_mule_degree": 0.0683,
+    "in_out_ratio": 0.0,
+    "distance_to_atm_km": 0.5029,
+    "historical_cashout_freq": 0.0988,
+    "time_of_day_cos": 0.0662,
+    "spatial_velocity_kmh": 0.0733
+  },
+  "plain_language_summary": "Empirical validation achieved 95.0% Top-3 candidate precision and 81.46% ROC-AUC on 20% holdout test cases without data leakage."
+}

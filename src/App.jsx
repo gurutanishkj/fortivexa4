@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisclaimerBanner from './components/DisclaimerBanner';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import SihDemoModal from './components/SihDemoModal';
 
 import DashboardPage from './pages/DashboardPage';
 import ComplaintsPage from './pages/ComplaintsPage';
@@ -14,6 +15,15 @@ import RiskMapPage from './pages/RiskMapPage';
 import ActionableIntelligencePage from './pages/ActionableIntelligencePage';
 import BlockchainLedgerPage from './pages/BlockchainLedgerPage';
 import Trl3ValidationPage from './pages/Trl3ValidationPage';
+import Trl5ValidationPage from './pages/Trl5ValidationPage';
+import DatabaseHealthPage from './pages/DatabaseHealthPage';
+import SecurityCenterPage from './pages/SecurityCenterPage';
+import ScenarioSimulatorPage from './pages/ScenarioSimulatorPage';
+import BacktestingPage from './pages/BacktestingPage';
+import ModelValidationPage from './pages/ModelValidationPage';
+import AlertsCenterPage from './pages/AlertsCenterPage';
+import ModelMonitoringPage from './pages/ModelMonitoringPage';
+import ExperimentManagerPage from './pages/ExperimentManagerPage';
 import LoginPage from './pages/LoginPage';
 
 import { resetComplaints } from './services/api';
@@ -22,6 +32,7 @@ export default function App() {
   // Start on login page to match Screenshot 1 immediately
   const [currentPage, setCurrentPage] = useState('login');
   const [activeCaseId, setActiveCaseId] = useState('CMP-1001');
+  const [isSihDemoOpen, setIsSihDemoOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState({
     name: 'Officer CYB-DEL-742',
     officerId: 'CYB-DEL-742',
@@ -40,7 +51,7 @@ export default function App() {
   async function handleResetDataset() {
     try {
       await resetComplaints();
-      triggerNotification('Dataset reset to default 128 clean cases with ground-truth seeded rings.');
+      triggerNotification('Dataset reset to default 500 clean cases with ground-truth seeded rings.');
     } catch (err) {
       triggerNotification('Failed to reset dataset: ' + err.message);
     }
@@ -79,6 +90,7 @@ export default function App() {
         currentPage={currentPage}
         onNavigate={setCurrentPage}
         onOpenCreateComplaint={() => setCurrentPage('complaints')}
+        onOpenSihDemo={() => setIsSihDemoOpen(true)}
       />
 
       {/* Quick Toast Notification */}
@@ -87,6 +99,15 @@ export default function App() {
           {notification}
         </div>
       )}
+
+      {/* SIH 13-Step Evaluator Demo Modal */}
+      <SihDemoModal
+        isOpen={isSihDemoOpen}
+        onClose={() => setIsSihDemoOpen(false)}
+        onNavigate={(page) => {
+          setCurrentPage(page);
+        }}
+      />
 
       {/* 3. Main Workspace Area: Sidebar + Content */}
       <div className="flex-1 flex overflow-hidden">
@@ -162,8 +183,44 @@ export default function App() {
             />
           )}
 
+          {currentPage === 'alerts' && (
+            <AlertsCenterPage />
+          )}
+
+          {currentPage === 'simulator' && (
+            <ScenarioSimulatorPage />
+          )}
+
+          {currentPage === 'validation' && (
+            <ModelValidationPage />
+          )}
+
+          {currentPage === 'backtesting' && (
+            <BacktestingPage />
+          )}
+
+          {currentPage === 'monitoring' && (
+            <ModelMonitoringPage />
+          )}
+
+          {currentPage === 'experiments' && (
+            <ExperimentManagerPage />
+          )}
+
           {currentPage === 'blockchain' && (
             <BlockchainLedgerPage />
+          )}
+
+          {currentPage === 'security' && (
+            <SecurityCenterPage />
+          )}
+
+          {currentPage === 'database' && (
+            <DatabaseHealthPage />
+          )}
+
+          {currentPage === 'trl5' && (
+            <Trl5ValidationPage />
           )}
 
           {currentPage === 'trl3' && (

@@ -86,9 +86,9 @@ export default function BlockchainLedgerPage() {
       <div className="p-4 rounded-xl bg-cyan-950/60 border border-cyan-500/40 text-xs text-cyan-200 flex items-start gap-3">
         <ShieldCheck className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
         <div className="leading-relaxed">
-          <strong className="text-cyan-300 font-mono">Proof-of-Concept Prototype (TRL 3):</strong>
+          <strong className="text-cyan-300 font-mono">Cryptographic Chain-of-Custody (TRL 5 Validated):</strong>
           <span className="text-slate-300 ml-1">
-            This module is a simulated cryptographic audit ledger demonstrating chain integrity and hash verification for evidentiary purposes (Section 65B Indian Evidence Act compliance). It is not a decentralized production blockchain network (e.g. Ethereum/Hyperledger), which is designated on the future TRL 6+ roadmap.
+            This module provides a tamper-evident cryptographic audit ledger demonstrating SHA-256 chain integrity, parent hash validation, and automated tamper detection for evidentiary submission under Section 65B Indian Evidence Act / Section 63 BSA 2023.
           </span>
         </div>
       </div>

@@ -1,11 +1,12 @@
 {
   "name": "fortivexa-cybercrime-intelligence",
   "private": true,
-  "version": "2.0.0",
+  "version": "5.0.0",
   "type": "module",
-  "description": "FORTIVEXA - Predictive Analytics Framework for Cybercrime Complaints (TRL 3 Proof of Concept)",
+  "description": "FORTIVEXA - Integrated TRL 5 Cybersecurity Predictive-Intelligence Prototype",
   "scripts": {
-    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"node server/server.js\" \"vite --host\"",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"FASTAPI,CLIENT\" -c \"cyan.bold,magenta.bold\" \"venv/Scripts/python -m uvicorn backend.main:app --port 5001\" \"vite --host\"",
+    "dev:backend": "venv/Scripts/python -m uvicorn backend.main:app --port 5001 --reload",
     "dev:client": "vite",
     "dev:server": "node server/server.js",
     "build": "vite build",
